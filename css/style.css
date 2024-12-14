@@ -21,10 +21,10 @@ margin-left: 65%;
 
 
 .footer{
-    text-align: center;
+    
     background-color:	#a9b5aa;
-   border-radius: 10px;
-   border: 1px solid black;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 
@@ -59,8 +59,7 @@ a, a:hover{
 }
 
 
-.indexpage
-{
+.indexpage{
     width: 96%;
     border-radius: 10px;
     border: 1px solid black;
@@ -70,3 +69,4 @@ a, a:hover{
     border: 1px solid black;
     border-radius: 10px;
 }
+
