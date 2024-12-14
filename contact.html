@@ -1,40 +1,198 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 
+
+  <!--head begint-->
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
   <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+
+
+  <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+
+
+  <!-- css bestanden -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/map.css" />
+
+  <!-- javascript bestanden-->
+  <script src="js/script.js"defer></script>
+  <script src="js/mapscript.js"defer></script>
+
+
 </head>
 
+  <!--body begint hier-->
+<body class="container-fluid">
+  <div class="color">
 
-<body>
-  <div class="achtergrond">
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand col-md-2" href="/index.html"><img src="assets/images/logo_cisse.jpg" width="100" height="100" class="logo"></a>
-        <a class="nav-link col-md-3" href="/index.html">home</a>
-        <a class="nav-link col-md-3"   href="/project.html">projecten</a>
-        <a class="nav-link-active active col-md-3" aria-current="page" href="/contact.html">contact</a>
+
+    <!--navbar begint hier-->
+    <nav class="navbar navbar-expand-md mt-2">
+      <div class="container-fluid col-md-12">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo_cisse.jpg" alt="" height="100px" width="100px" >
+        </a>
+
+        <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-md-6 text-end" id="navbarSupportedContent">
+          <ul class="navbar-nav row col-md-12 h5">
+            <li class="nav-item col-md-4">
+              <a class="nav-link text-end" href="index.html">home</a>
+            </li>
+            <li class="nav-item dropdown text-end col-md-4">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-center" href="portfolio.html">portfolio</a></li>
+                <li><a class="dropdown-item text-center" href="project1.html">logo maken</a></li>
+                <li><a class="dropdown-item text-center" href="project2.html">wire frames</a></li>
+              </ul>
+            </li>
+            <li class="nav-item col-md-4">
+              <a class="nav-link active" aria-current="page" href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main class="container">
-      dit is de contact pagina
+    
+
+    <!--header begint hier-->
+    <header class="color">
+      <br>
+      <h1 class="col display-3 text-center">zakelijke info!</h1>
+      <br>
+    </header>
+    <br>
+
+
+    <!--hier begint de inhoud-->
+   <div class="row">
+
+    <!--main begint hier-->
+    <main class="main col-md-8 px-5">
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="form px-3" data-netlify="true" data-netlify-recaptcha="true">
+        <fieldset class="row col-md-12">
+          <legend class="text-center">Uw persoonlijke gegevens</legend>
+          <br>
+          <br>
+          
+
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">voornaam<span>*</span></label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+  
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">achternaam <span>*</span></label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+  
+  
+          <div class="col-md-6">
+            <label for="mail" class="form-label">e-mail <span>*</span></label>
+            <input type="email" class="form-control" id="mail" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="company" class="form-label">bedrijf </label>
+            <input type="text" class="form-control" id="company">
+          </div>
+
+          <div class="col-md-6">
+            <label for="message" class="form-label">uw boodschap</label>
+            <textarea type="text" class="form-control" id="message"></textarea>
+          </div>
+          <span></span>
+          <br>
+          <button type="submit" class="btn btn-secondary col-md-6">klik hier om te versturen</button>
+        </fieldset>
+        <br>
+        
+        
+      </form>
+      
+    
+      <br>
     </main>
+
+    <!-- aside begint hier-->
+    <aside class="col-md-4">
+      <div class="contact px-2 mx-2">
+      <h5 class="text-uppercase fw-bolder">contact</h5>
+      <p>Heb je vragen of wil je contact opnemen?<br>
+        Gelieve dan het forum dan hiernaast in te vullen
+      </p>
+
+      <h5 class="text-uppercase fw-bolder">persoonlijke gegevens</h5>
+        <a href="mailto:cisse.vangorp@gmail.com">cisse.vangorp@gmail.com</a><br>
+        +32 474 07 39 40
+    
+      <ul class="list-inline socials">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/cissevg16/" target="_blank">
+            <i class="bi bi-instagram fs-6"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/cisse.vangorp" target="_blank">
+            <i class="bi bi-facebook fs-6"></i>
+          </a>
+        </li>
+      </ul>
+      </div>
+    
+      <!--leaflet map-->
+      <section id="map" class="row rounded">
+        <div id="mapje" class="col-md-12 mb-3"></div>
+      </section>
+
+
+      <br>
+    </aside>
+  </div>
+    
+
+  <!--footer begint hier-->
   <footer class="footer col-md-12">
-    Cisse Van Gorp
+    &copy;<span id="year"></span> Cisse Van Gorp
   </footer>
-</div>
+
+  </div>
 </body>
 
 
