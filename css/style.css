@@ -15,6 +15,12 @@ margin-left: 65%;
 }
 
 
+.img-project{
+    height: 300px;
+    width: 300px;
+}
+
+
 .logo{
     border-radius: 10px;
 }
@@ -70,3 +76,12 @@ a, a:hover{
     border-radius: 10px;
 }
 
+.d-block{
+    height: 400px;
+}
+
+
+.img-opdracht{
+    height: 75%;
+    width: 75%;
+}
