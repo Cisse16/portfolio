@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+
+  <!--hier begint head-->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+
+
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+
+  <!--javascript bestanden-->
+  <script src="js/script.js"defer></script>
+
+
+</head>
+
+  <!--hier begint u body-->
+<body class="container-fluid fs-5">
+  <div class="color">
+  <!--navbar begint hier-->
+  <nav class="navbar navbar-expand-md mt-2">
+    <div class="container-fluid col-md-12">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo_cisse.jpg" alt="" height="100px" width="100px" >
+      </a>
+
+      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse col-md-6 text-end" id="navbarSupportedContent">
+        <ul class="navbar-nav row col-md-12 h3">
+          <li class="nav-item col-md-4">
+            <a class="nav-link text-end" href="index.html">home</a>
+          </li>
+          <li class="nav-item dropdown text-end col-md-4">
+            <a class="nav-link active dropdown-toggle " aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">ipadress app</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-center" href="portfolio.html">portfolio</a></li>
+                <li><a class="dropdown-item text-center" href="project1.html">nos</a></li>
+                <li><a class="dropdown-item text-center" href="project2.html">systeem beveiliging</a></li>
+                <li><a class="dropdown-item text-center" href="project3.html">netwerk in netwerk</a></li>
+                <li><a class="dropdown-item text-center" href="project4.html">scripting</a></li>
+                <li><a class="dropdown-item text-center" href="project5.html">ipadress app</a></li>
+                <li><a class="dropdown-item text-center" href="project6.html">packet tracer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item col-md-4">
+            <a class="nav-link"  href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--header begint hier-->
+  <header class="col-md-12">
+  <br>
+  <h2 class="col display-3 text-center">ontworpen project</h2>
+  <br>
+  </header> 
+  <br>
+  
+  <div class="row">
+  
+  <!--hier begint mijn main-->
+  <main class="col-md-8">
+    
+        <div class="indexpage row col-md-12 px-2 mx-2">
+        <div class="col-md-8">
+        <h4 class="text-uppercase fw-bolder">Wat is het doel?</h4>
+        <p>Het doel van deze applicatie is om gebruikers een eenvoudige en intuïtieve tool te bieden
+            waarmee ze zowel IPv4- als IPv6-adressen kunnen configureren en beheren binnen hun netwerk.
+            De applicatie richt zich op netwerkbeheerders en IT-professionals, 
+            maar is ook geschikt voor minder ervaren gebruikers. Met deze tool kunnen instellingen snel en 
+            foutloos worden toegepast, zoals het toewijzen van statische adressen, 
+            het beheren van subnetten en het instellen van DHCP.
+            De applicatie moet<br><br>
+
+            Compatibiliteit bieden voor zowel IPv4 als IPv6, inclusief dual-stack netwerken.<br>
+            Beveiligd zijn om te voorkomen dat ongeoorloofde wijzigingen aan netwerkinstellingen worden aangebracht.<br>
+            Gebruiksvriendelijk zijn, met een intuïtieve interface en duidelijke instructies.
+
+        </p>
+        <br>
+        <h4 class="text-uppercase fw-bolder">probleemstelling</h4>
+        <p>Het configureren van IP-adressen kan een complexe taak zijn, vooral bij de overgang van IPv4 naar IPv6.
+            Veel gebruikers en netwerkbeheerders lopen tegen de volgende problemen aan:
+            <br><br>
+
+            <div class="fw-bolder">Complexiteit van IPv6</div> IPv6-adressen zijn langer en ingewikkelder dan IPv4-adressen, wat het handmatig instellen of foutzoeken lastig maakt.
+            <br><br>
+            
+            <div class="fw-bolder">Onvoldoende kennis</div> Gebruikers hebben vaak beperkte kennis van subnetmaskers, prefixlengtes en andere aspecten van IP-configuratie.
+            <br><br>
+           
+            <div class="fw-bolder">Dual-stack beheer</div> Veel netwerken draaien momenteel op een combinatie van IPv4 en IPv6 (dual-stack), wat het beheer nog ingewikkelder maakt.
+            <br><br>
+
+            <div class="fw-bolder">Beperkte tools</div> Bestaande tools zijn vaak niet gebruiksvriendelijk of vereisen uitgebreide technische kennis. Dit kan leiden tot fouten en netwerkproblemen.
+            <br><br>
+            
+            <div class="fw-bolder">Efficiëntie</div> Het handmatig configureren van meerdere apparaten kost veel tijd en is foutgevoelig.
+            <br><br>
+
+            Door deze obstakels kan het configureren van netwerkadressen leiden tot verstoringen, foutieve instellingen en verminderde netwerkprestaties.
+            
+        </p>
+        <br>
+        <h4 class="text-uppercase fw-bolder">ontwerp</h4>
+        <p>De applicatie is ontworpen met de focus op gebruiksvriendelijkheid, flexibiliteit en veiligheid. Het bestaat uit de volgende componenten:
+
+            <div class="fw-bolder">Gebruikersinterface (UI)</div>
+            Intuïtief Dashboard: Het hoofdscherm toont een overzicht van actieve netwerkinterfaces en hun huidige IP-configuraties (zowel IPv4 als IPv6).
+            Stapsgewijze Wizards: Voor het configureren van statische adressen, DHCP-instellingen en dual-stack configuraties.
+            Realtime Feedback: Meldingen over de geldigheid van ingevoerde adressen en subnetten om fouten te voorkomen.
+            <br><br>
+
+            <div class="fw-bolder">IPv4- en IPv6-functionaliteit</div>
+            IPv4-configuratie: Toewijzing van statische adressen, subnetmaskers, gateway-instellingen en DNS-servers.
+            IPv6-configuratie: Ondersteuning voor prefixlengtes, routeradvertenties en stateless/stateful configuraties.
+            Dual-stack ondersteuning: Beide protocollen kunnen parallel worden geconfigureerd en beheerd.
+            <br><br>
+
+            <div class="fw-bolder">Automatisering en Validatie</div>
+            Automatische detectie: De applicatie detecteert automatisch beschikbare netwerkinterfaces en huidige IP-instellingen.
+            Validatie van IP-adressen: Controleert ingevoerde waarden (bijv. correct formaat, subnetconsistentie) om fouten te voorkomen.
+            DHCP- en SLAAC-opties: Ondersteunt geautomatiseerde adresconfiguratie voor zowel IPv4 als IPv6.
+            <br><br>
+
+            <div class="fw-bolder">Beveiliging</div>
+            Authenticatie en Autorisatie: Toegang tot de applicatie is beveiligd met wachtwoorden en rolgebaseerde rechten.
+            Logboekfunctionaliteit: Alle wijzigingen worden geregistreerd voor auditdoeleinden en foutopsporing.
+            <br><br>
+
+            <div class="fw-bolder">Platformonafhankelijkheid</div>
+            De applicatie is beschikbaar als een desktoptoepassing (Windows, macOS, Linux) en een webgebaseerde interface voor toegang op afstand.
+            <br><br>
+
+            <div class="fw-bolder">Educatieve Ondersteuning</div>
+            Tooltips en uitleg: Bij elke stap worden duidelijke instructies gegeven om de gebruiker te begeleiden.
+            Testmodus: Een simulatieoptie waarmee gebruikers wijzigingen kunnen testen voordat ze live worden toegepast.
+
+        </p>
+        </div>
+        <div class="col-md-4 text-center mt-2">
+          <figure>
+            <img src="assets/images/ipv4.jpg" class="img-project">
+            <figcaption>&copy;Cisse</figcaption>
+
+            <figure class="mt-4">
+            <img src="assets/images/ipv6.png" class="img-project">
+            <figcaption>&copy;Cisse</figcaption>
+        </div>
+        
+        <br>
+       </div>
+       <br>
+
+      
+
+  </main>
+
+  <!--aside begint hier-->
+  <aside class="col-md-4">
+    <div class="contact px-2 mx-2">
+    <h5 class="text-uppercase fw-bolder">contact</h5>
+    <p>Heb je vragen of wil je contact opnemen?<br>
+      Gelieve dan mijn contact pagina te bezoeken
+    </p>
+
+    <h5 class="text-uppercase fw-bolder">persoonlijke gegevens</h5>
+      <a href="mailto:cisse.vangorp@gmail.com">cisse.vangorp@gmail.com</a><br>
+      +32 474 07 39 40
+  
+    <ul class="list-inline socials">
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/cissevg16/" target="_blank">
+          <i class="bi bi-instagram fs-6"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/cisse.vangorp" target="_blank">
+          <i class="bi bi-facebook fs-6"></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </aside>
+  </div>
+  
+  <!--footer begint hier-->
+  <br>
+  <footer class="footer col-md-12 text-center">
+    &copy;<span id="year"></span> Cisse Van Gorp
+  </footer>
+
+</div>
+</body>
+
+
+</html>
