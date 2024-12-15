@@ -109,7 +109,7 @@ crossorigin=""></script>
     <!--main begint hier-->
     <main class="main col-md-8 px-5">
 
-      <form action="https://api.web3forms.com/submit" method="POST" class="form px-3" data-netlify="true" data-netlify-recaptcha="true">
+      <form name="contact" action="https://api.web3forms.com/submit" method="POST" class="form px-3" data-netlify="true" data-netlify-recaptcha="true">
         <fieldset class="row col-md-12">
           <legend class="text-center">Uw persoonlijke gegevens</legend>
           <br>
@@ -144,6 +144,7 @@ crossorigin=""></script>
           <span></span>
           <br>
           <button type="submit" class="btn btn-secondary col-md-6">klik hier om te versturen</button>
+          <input type="hidden" name="form-name" value="contact" />
         </fieldset>
         <br>
         
